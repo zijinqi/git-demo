@@ -85,6 +85,14 @@ h5 {
     float: right;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
 .clearfix {
     *zoom: 1;
 }
@@ -370,15 +378,15 @@ h5 {
 }
 
 .ui-2 {
-    background-position: -52px 0;
+    background-position: -51px 0;
 }
 
 .ui-3 {
-    background-position: 0 -52px;
+    background-position: 0 -51px;
 }
 
 .ui-4 {
-    background-position: -52px -52px;
+    background-position: -51px -51px;
 }
 
 .md-link-title {
@@ -423,9 +431,114 @@ h5 {
 
 .vid-bd {}
 
-.vid-bd-l {}
+.vid-bd-l {
+    width: 304px;
+    height: 594px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
 
-.vid-bd-r {}
+.vid-bd-l .vid-bd-img {
+    width: 304px;
+    height: 150px;
+    background: url('./images/video-bg.gif') no-repeat;
+}
+
+.vid-bd-l .develop-img {
+    background-position: 0 -150px;
+}
+
+.vid-bd-l .market-img {
+    background-position: 0 -300px;
+}
+
+.vid-bd-l .vid-bd-tit {
+    width: 140px;
+    height: 140px;
+    border-radius: 140px;
+    margin: -78px auto 0 auto;
+    background-color: #36373b;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    letter-spacing: 0.1em;
+}
+
+.vid-bd-l h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.vid-bd-l p {
+    font-size: 18px;
+    margin: 20px 26px 0 26px;
+    min-height: 120px;
+}
+
+.vid-bd-l span {
+    display: block;
+    font-size: 16px;
+    color: #bcbcbc;
+    padding: 19px 0 30px 26px;
+}
+
+.vid-bd-l a {
+    display: block;
+    margin: 0 26px;
+    height: 55px;
+    background-color: #188eee;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    line-height: 55px;
+    margin-bottom: 45px;
+}
+
+.vid-bd-r {
+    width: 884px;
+}
+
+.vid-bd-r .vid-r-bd {
+    width: 280px;
+    height: 290px;
+    margin: 0 6px 10px 6px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.vid-bd-r .vid-r-bd:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.vid-bd-r p {
+    font-size: 16px;
+    margin: 18px 18px 0 18px;
+    min-height: 70px;
+}
+
+.vid-bd-r .tip {
+    width: 33px;
+    height: 18px;
+    border: 1px solid #188eee;
+    text-align: center;
+    color: #188eee;
+    line-height: 18px;
+    float: left;
+}
+
+.vid-bd-r .count {
+    float: left;
+    margin-left: 10px;
+    color: #bcbcbc;
+}
+
+.vid-bd-r .vid-r-info {
+    margin: 0 15px 25px 15px;
+}
 
 
 /* video-new */
