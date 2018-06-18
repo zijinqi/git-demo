@@ -544,13 +544,21 @@
             });
 
 
+            //返回顶部
+            $('#backTopButton').click(function() {
+                $("html").animate({
+                    scrollTop: 0
+                }, 1500);
+            });
+
+
             //login
             $('#loginLink').on('click', function(even) {
                 $('.module-shade').removeClass('hide');
             })
             $('.modal-close').on('click', function(even) {
                 $('.module-shade').addClass('hide');
-            })
+            });
         });
     </script>
 
