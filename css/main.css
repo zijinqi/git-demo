@@ -26,11 +26,12 @@ h6 {
 }
 
 body {
-    font-size: 12px;
     font-style: normal;
-    color: #000;
     font-family: 'Microsoft Yahei', '微软雅黑', 'Simsun', '宋体', 'Arial', sans-serif;
     background: #fff;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
 }
 
 em,
@@ -68,6 +69,10 @@ h4 {
 
 h5 {
     font-size: 14px;
+}
+
+p {
+    margin: 0 0 10px;
 }
 
 
@@ -654,6 +659,233 @@ h5 {
 }
 
 
-/* module-footer */
+/* footer */
 
-.module-footer {}
+.footer-conter {
+    height: 122px;
+    background-color: #ebecec;
+    margin-top: 80px;
+}
+
+.footer-conter-bd {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-conter .conter-l {
+    width: 370px;
+    height: 122px;
+    margin: 0 15px;
+}
+
+.footer-conter .conter-l img {
+    width: 100px;
+    height: 82px;
+    margin: 20px 0 20px 5px;
+}
+
+.footer-conter .conter-l a {
+    width: 135px;
+    margin-left: 40px;
+    margin-top: 35px;
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 16px;
+    color: #373d41;
+}
+
+.footer-conter .conter-r {
+    width: 800px;
+}
+
+.footer-conter .conter-r>a {
+    display: inline-block;
+    margin-top: 50px;
+    width: 195px;
+    border-left: 1px solid #cfd0d1;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+}
+
+.footer-conter .conter-r>a:hover {
+    color: #107dd5;
+}
+
+.footer-conter .conter-r>a:first-child {
+    border-left: none;
+}
+
+.footer-saler {
+    width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #cfd0d1;
+    padding: 35px 0 60px 0;
+}
+
+.footer-saler-l {
+    width: 680px;
+    margin: 0 15px;
+}
+
+.footer-saler-l h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.footer-saler-l p {
+    max-width: 390px;
+}
+
+.footer-saler-r img {
+    float: left;
+    margin: 0 20px;
+}
+
+.footer-saler-r .info {
+    float: left;
+    margin-top: 30px;
+    width: 100px;
+    margin-left: 30px;
+}
+
+.footer-nav {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.footer-nav a {
+    display: inline-block;
+    width: 65px;
+    margin-right: 40px;
+    font-size: 16px;
+    color: #73777a;
+}
+
+.footer-link {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.footer-link a {
+    line-height: 30px;
+    color: #73777a;
+    padding-right: 20px;
+}
+
+.copyright {
+    width: 1200px;
+    margin: 15px auto 35px auto;
+    color: #73777a;
+}
+
+
+/* 返回顶部 */
+
+#backTopButton {
+    position: absolute;
+    right: 0;
+    margin-top: -80px;
+}
+
+
+/* 登录框 */
+
+.module-shade {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.module-modal-login {
+    width: 500px;
+    height: 300px;
+    margin: 200px auto 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.module-modal-hedder {
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.module-modal-hedder .modal-title {
+    font-size: 18px;
+    color: #333333;
+    font-weight: normal;
+}
+
+.module-modal-hedder .modal-close {
+    cursor: pointer;
+}
+
+.module-modal-hedder .modal-close:hover {
+    color: #188eee;
+}
+
+.module-modal-body {
+    padding: 15px;
+}
+
+.middle {
+    width: 200px;
+}
+
+.input-field {
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.input-label {
+    display: inline-block;
+    width: 70px;
+    text-align: right;
+}
+
+.input-case {
+    height: 32px;
+    padding: 3px 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+.btn-box-login {
+    margin-left: 165px;
+    margin-right: 90px;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease .6s;
+}
+
+.btn-primary {
+    color: #fff;
+    background: #188eee;
+}
+
+.btn-primary:hover {
+    background: #40a9ff;
+}

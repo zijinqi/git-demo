@@ -43,10 +43,10 @@
                 </ul>
                 <ul class="frt nav-right">
                     <li>
-                        <a href="javascript:;">登录</a>
+                        <a id="loginLink" href="javascript:;">登录</a>
                     </li>
                     <li>
-                        <a href="javascript:;">注册</a>
+                        <a id="registerLink" href="javascript:;">注册</a>
                     </li>
                 </ul>
                 <form id="search " class="navbar-form frt" action=" ">
@@ -437,20 +437,91 @@
                 </div>
             </div>
         </div>
-        <div class="module-footer ">
-            <div class="footer-conter"></div>
-            <div class="footer-saler"></div>
-            <div class="footer-nav"></div>
-            <div class="footer-link"></div>
-            <div class="copyright"></div>
+        <div class="footer-conter clearfix">
+            <div class="footer-conter-bd">
+                <div class="conter-l flt">
+                    <img src="./images/dianhuadongtu.gif" alt="" class="flt">
+                    <a href="" class="flt">
+                        <p>全国免费电话咨询</p>
+                        <p>0791-88531673</p>
+                    </a>
+                </div>
+                <div class="conter-r flt">
+                    <a href="">课程详细介绍咨询</a>
+                    <a href="">学习教程及素材咨询</a>
+                    <a href="">课程优惠信息咨询</a>
+                    <a href="">1对1贴心服务</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-saler clearfix">
+            <div class="footer-saler-l flt">
+                <h3>51RGB在线教育</h3>
+                <p>我们提供专业的职业技术培训，聘请业内顶尖的设计师合作教学模式，坚持为设计行业及IT互联网行业培训优秀人才，拓宽职业发展道路。</p>
+            </div>
+            <div class="footer-saler-r flt">
+                <img src="./images/pscode.png" alt="">
+                <img src="./images/dwcode.png" alt="">
+                <div class="info">
+                    <p>关注微信公众号</p>
+                    <p>可获取学习资源</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <a href="">关于我们</a>
+            <a href="">联系我们</a>
+            <a href="">课程介绍</a>
+            <a href="">会员录屏</a>
+        </div>
+        <div class="footer-link">
+            <a href="">腾讯精品课</a>
+            <a href="">51RGB腾讯课堂</a>
+            <a href="">优酷视频</a>
+            <a href="">sitemap</a>
+            <a href="">PPT模板网</a>
+        </div>
+        <div class="copyright">
+            <span>Copyright © 2018 51RGB在线教育 All Rights Reserved 本网站隶属于南昌利百加传媒有限公司</span>
+            <span class="ml-10">赣ICP备14008345号-3</span>
         </div>
     </div>
-
-
+    <!-- 返回顶部 -->
+    <a href="">
+        <a href="javascript:void" id="backTopButton">
+            <img src="./images/backtop.jpg" alt="">
+        </a>
+    </a>
+    <!-- 登录框 -->
+    <div class="module-shade hide">
+        <div class="module-modal-login">
+            <div class="module-modal-hedder">
+                <h3 class="modal-title flt">登录</h3>
+                <i class="modal-close iconfont icon-close frt"></i>
+            </div>
+            <div class="module-modal-body">
+                <form class="form-login" action="">
+                    <div class="input-field">
+                        <label class="input-label">用户名：</label>
+                        <input class="input-case middle" type="text" placeholder="请输入用户名">
+                    </div>
+                    <div class="input-field">
+                        <label class="input-label">密码：</label>
+                        <input class="input-case middle" type="password" placeholder="请输入密码">
+                    </div>
+                    <div class="btn-box-login">
+                        <button class="btn btn-primary">登录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 登录框结束 -->
     <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.js"></script>
     <script type="text/javascript" src="./js/carousel.js"></script>
     <script type="text/javascript">
         $(function() {
+            //banner
             $(".carousel-content").carousel({
                 carousel: ".carousel", //轮播图容器
                 indexContainer: ".img-index", //下标容器
@@ -471,6 +542,15 @@
             }, function() {
                 $(this).find("img").attr("src", "./images/right_btn1.png");
             });
+
+
+            //login
+            $('#loginLink').on('click', function(even) {
+                $('.module-shade').removeClass('hide');
+            })
+            $('.modal-close').on('click', function(even) {
+                $('.module-shade').addClass('hide');
+            })
         });
     </script>
 
