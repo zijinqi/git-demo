@@ -63,6 +63,11 @@ table {
     border-collapse: collapse;
 }
 
+h2 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
 h4 {
     font-size: 18px;
 }
@@ -73,6 +78,24 @@ h5 {
 
 p {
     margin: 0 0 10px;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+code {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 
@@ -1038,4 +1061,48 @@ p {
 .list-item .item-img img {
     width: 100%;
     height: 100%
+}
+
+
+/* list_detail */
+
+.module-detail {
+    width: 870px;
+    min-height: 800px;
+    padding: 0 15px;
+}
+
+.module-detail-title li {
+    display: block;
+    float: left;
+    font-size: 20px;
+    color: #333;
+    padding: 0;
+    margin: 50px auto 40px;
+}
+
+.module-detail-title li>a {
+    color: #333;
+}
+
+.module-detail-title li>span {
+    padding: 0 5px;
+    color: #a4a4a4;
+}
+
+.module-detail-box h3 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.module-detail-box .share-list {
+    color: #aaa;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.detail-box-body {
+    font-size: 16px;
+    line-height: 1.75;
 }
