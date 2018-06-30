@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex布局</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <span>flex-direction:row/align-items: center<br>
+    水平主轴默认排列并且平均分布/项目竖向交叉轴居中对齐</span>
+    <div class="flex-box flex-direction-r">
+        <div class="flex-item">子元素01</div>
+        <div class="flex-item">子元素02</div>
+        <div class="flex-item">子元素03</div>
+        <div class="flex-item">子元素04</div>
+        <div class="flex-item">子元素05</div>
+        <div class="flex-item">子元素06</div>
+        <div class="flex-item">子元素07</div>
+        <div class="flex-item">子元素08</div>
+        <div class="flex-item">子元素09</div>
+        <div class="flex-item">子元素10</div>
+    </div>
+    <span>flex-direction: row-reverse/align-items: flex-end<br>
+    水平主轴倒叙排列并且平均分布/项目竖向交叉轴底部对齐</span>
+    <div class="flex-box flex-direction-re">
+        <div class="flex-item">子元素01</div>
+        <div class="flex-item">子元素02</div>
+        <div class="flex-item">子元素03</div>
+        <div class="flex-item">子元素04</div>
+        <div class="flex-item">子元素05</div>
+        <div class="flex-item">子元素06</div>
+        <div class="flex-item">子元素07</div>
+        <div class="flex-item">子元素08</div>
+        <div class="flex-item">子元素09</div>
+        <div class="flex-item">子元素10</div>
+    </div>
+    <span>
+        flex-direction还有column和column-reverse参数,竖向默认or倒叙排列<br>
+        align-items还有flex-start/baseline/stretch参数.
+    </span>
+    <hr>
+    <span>
+        flex-wrap: nowrap/justify-content: flex-end<br>
+        子元素不换行/以最后一个子元素对齐
+    </span>
+    <div class="flex-box flex-wrap wrap-n">
+        <div class="flex-item">子元素01</div>
+        <div class="flex-item">子元素02</div>
+        <div class="flex-item">子元素03</div>
+        <div class="flex-item">子元素04</div>
+        <div class="flex-item">子元素05</div>
+        <div class="flex-item">子元素06</div>
+        <div class="flex-item">子元素07</div>
+        <div class="flex-item">子元素08</div>
+        <div class="flex-item">子元素09</div>
+        <div class="flex-item">子元素10</div>
+    </div>
+    <span>
+        flex-wrap: wrap/justify-content: space-between<br>
+        子元素换行/子元素两边对齐
+    </span>
+    <div class="flex-box flex-wrap wrap-r">
+        <div class="flex-item">子元素01</div>
+        <div class="flex-item">子元素02</div>
+        <div class="flex-item">子元素03</div>
+        <div class="flex-item">子元素04</div>
+        <div class="flex-item">子元素05</div>
+        <div class="flex-item">子元素06</div>
+        <div class="flex-item">子元素07</div>
+        <div class="flex-item">子元素08</div>
+        <div class="flex-item">子元素09</div>
+        <div class="flex-item">子元素10</div>
+    </div>
+    <span>
+        ❤在设置flex-wrap的时候给子元素设置flex属性(flex: 0 0 100px;默认尺寸100px).<br>
+        flex-wrap还有wrap-reverse参数,换行倒叙排列<br>
+        justify-content还有flex-start/center/space-around参数.<br>
+        flex-flow是flex-direction和flex-wrap属性的简写形式，默认flex-flow: row nowrap<br>
+        align-content定义多根轴线的对齐方式，在只有一根主轴的情况下不起作用,有flex-start/flex-end/center/space-between/space-around/stretch参数.
+    </span>
+    <hr>
+    <hr>
+    <span>
+        第二个子元素order为1,默认为0,数值越小越靠前,第二个子元素排到最后.<br>
+        第四个元素的align-self(单独项目上的对齐方式)为flex-end.他还有: auto/flex-start/center/baseline/stretch这些参数.<br>
+        这里flex-item的flex为1 1 auto(放大比例/空间不足将缩小/没有设置默认尺寸);
+    </span>
+    <div class="flex-box item">
+        <div class="flex-item">子元素01</div>
+        <div class="flex-item">子元素02</div>
+        <div class="flex-item">子元素03</div>
+        <div class="flex-item">子元素04</div>
+        <div class="flex-item">子元素05</div>
+        <div class="flex-item">子元素06</div>
+        <div class="flex-item">子元素07</div>
+        <div class="flex-item">子元素08</div>
+        <div class="flex-item">子元素09</div>
+        <div class="flex-item">子元素10</div>
+    </div>
+    <span>
+        flex-grow定义项目的放大比例（默认0，始终不放大）.
+    </span>
+    <div class="flex-box item1">
+        <div class="flex-item">子元素01</div>
+        <div class="flex-item">子元素02</div>
+        <div class="flex-item">子元素03</div>
+        <div class="flex-item">子元素04</div>
+        <div class="flex-item">子元素05</div>
+        <div class="flex-item">子元素06</div>
+        <div class="flex-item">子元素07</div>
+        <div class="flex-item">子元素08</div>
+        <div class="flex-item">子元素09</div>
+        <div class="flex-item">子元素10</div>
+    </div>
+    <span>
+        flex-shrink定义项目的缩小比例（默认为1，空间不足将缩小)<br>
+    </span>
+    <div class="flex-box item2">
+        <div class="flex-item">子元素01</div>
+        <div class="flex-item">子元素02</div>
+        <div class="flex-item">子元素03</div>
+        <div class="flex-item">子元素04</div>
+        <div class="flex-item">子元素05</div>
+        <div class="flex-item">子元素06</div>
+        <div class="flex-item">子元素07</div>
+        <div class="flex-item">子元素08</div>
+        <div class="flex-item">子元素09</div>
+        <div class="flex-item">子元素10</div>
+    </div>
+    <span>
+        flex是对flex-grow，flex-shrink和flex-basis三个属性的缩写，默认flex:0 1 auto;
+    </span>
+</body>
+
+</html>

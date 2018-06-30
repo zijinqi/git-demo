@@ -1,0 +1,73 @@
+.flex-box {
+    display: flex;
+    width: 900px;
+    height: 180px;
+    padding: 10px;
+    background: #2D5F04;
+    box-sizing: border-box;
+}
+
+.flex-item {
+    flex: 1 1 auto;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    line-height: 100px;
+    background: #A2EB59;
+}
+
+.flex-direction-r {
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex-direction-re {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.flex-wrap {
+    height: auto;
+}
+
+.flex-wrap .flex-item {
+    flex: 0 0 100px;
+}
+
+.wrap-n {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+.wrap-r {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* 子元素属性 */
+
+.item .flex-item:nth-child(2) {
+    order: 1;
+}
+
+.item .flex-item:nth-child(4) {
+    align-self: flex-end;
+}
+
+.item1 .flex-item {
+    flex-grow: 0;
+}
+
+.item2 {
+    width: 600px;
+}
+
+.item2 .flex-item {
+    flex-shrink: 1;
+    /* flex-basis: 100px; */
+}
+
+.item3 .flex-item {
+    flex: 0 1 100px;
+}
